@@ -1,0 +1,9 @@
+.idea/
+
+# build artifacts
+*.exe
+*.test
+*.out
+apiprobe-mcp
+bin/
+dist/

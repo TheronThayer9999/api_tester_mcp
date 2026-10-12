@@ -1,0 +1,12 @@
+services:
+  apiprobe-mcp:
+    build: .
+    image: apiprobe-mcp:1.0.0
+    container_name: apiprobe-mcp
+    ports:
+      - "8931:8931"
+    environment:
+      APIPROBE_TRANSPORT: http
+      APIPROBE_ADDR: ":8931"
+      APIPROBE_PATH: /mcp
+    restart: unless-stopped
